@@ -1,24 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>Laboratorio 10</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Datos Personales</h1>
+        <p id="nombre"></p>
+        <p id="edad"></p>
+        <p id="estudiante"></p>
+    </div>
+
     <script>
         // Declaración de variables
         let nombre = "Junior";
         let edad = 18;
         let esEstudiante = true;
-        
+
+        // Mostrar datos en la página web
+        document.getElementById("nombre").textContent = "Nombre: " + nombre;
+        document.getElementById("edad").textContent = "Edad: " + edad;
+        document.getElementById("estudiante").textContent = "Estudiante: " + (esEstudiante ? "Sí" : "No");
+
         // Imprimir en consola
         console.log("Nombre: ", nombre);
         console.log("Edad: ", edad);
         console.log("Es estudiante: ", esEstudiante);
-
-        // Imprimir en la pagina web
-        document.write("Nombre: "nombre);
-        document.write("Edad: "edad);
-        document.write("esEstudiante: "esEstudiante);
     </script>
 </body>
 </html>
