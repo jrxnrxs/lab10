@@ -30,6 +30,10 @@
         <p id="nombre"></p>
         <p id="edad"></p>
         <p id="estudiante"></p>
+        <p id="suma"></p>
+        <p id="resta"></p>
+        <p id="multiplicacion"></p>
+        <p id="division"></p>
     </div>
 
     <script>
@@ -38,27 +42,32 @@
         let edad = 18;
         let esEstudiante = true;
 
+        // Variables de operaciones matemáticas
+        let num1 = 10;
+        let num2 = 5;
+        let suma = num1 + num2;
+        let resta = num1 - num2;
+        let multiplicacion = num1 * num2;
+        let division = num1 / num2;
+
         // Mostrar datos en la página web
         document.getElementById("nombre").textContent = "Nombre: " + nombre;
         document.getElementById("edad").textContent = "Edad: " + edad;
         document.getElementById("estudiante").textContent = "Estudiante: " + (esEstudiante ? "Sí" : "No");
+        document.getElementById("suma").textContent = "Suma: " + suma;
+        document.getElementById("resta").textContent = "Resta: " + resta;
+        document.getElementById("multiplicacion").textContent = "Multiplicación: " + multiplicacion;
+        document.getElementById("division").textContent = "División: " + division;
 
         // Imprimir en consola
         console.log("Nombre: ", nombre);
         console.log("Edad: ", edad);
         console.log("Es estudiante: ", esEstudiante);
-
-//practica 2
-let numero1= 300;
-let numero2= 20;
-let suma = numero1 + numero2;
-
-//publicar en consola
-console.log("suma =", suma);
-
-//publicar en pagina
-document.write("<br>suma= ", suma);
-
+        console.log("Suma: ", suma);
+        console.log("Resta: ", resta);
+        console.log("Multiplicación: ", multiplicacion);
+        console.log("División: ", division);
     </script>
 </body>
 </html>
+
